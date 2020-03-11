@@ -10,16 +10,16 @@ Existing moderation techniques demand constant diligence or impose expectations 
 #### Overview
 Our first paper prototype features our initial interface and interactions. We designed our prototypes to focus on two key tasks for our social drinkers: setting their spending and drinking limits before the night out and counting their drinks and tracking their spending while out. 
 
-
-![alt text](PAPER_PROTOTYPE_BEFORE_OVERVIEW.png “Overview of the initial paper prototype.”)
+<img src="PAPER_PROTOTYPE_BEFORE_OVERVIEW.png" width="700" alt="Overview of the initial paper prototype."/>
 
 #### Task Execution 
 
 ##### Setting Spending and Drinking Limit
-![alt text](task_1_paper_1.png “Execution of task 1 on the initial paper prototype.”)
+<img src="task_1_paper_1.png" width="700" alt="Execution of task 1 on the initial paper prototype."/>
+
 
 ##### Counting Drinks and Tracking Spending While Out
-![alt text](task_2_paper_1.png “Execution of task 2 on the initial paper prototype.”)
+<img src="task_2_paper_1.png" width="700" alt="Execution of task 2 on the initial paper prototype."/>
 
 
 ### Testing Process
@@ -56,44 +56,42 @@ During the testing there were two major themes for the flaws that surfaced in ou
 
 There was a fundamental inefficiency in how the screens were organized in the initial paper prototype. Participants often felt like they had to perform more actions than were needed or they got lost in the screens. While this issue existed in both of the applications, the impact was more substantial on the mobile side which required drastic changes. Outside of inefficiency we also had issues with certain elements of the design being misidentified as interactive or not.
 
-![alt text](SET_LIMIT_BEFORE.PNG “A before image for setting a limit.”)
+<img src="SET_LIMITS_BEFORE.jpg" width="200" alt="A before image for setting a limit."/>
 
-![alt text](SET_LIMIT_AFTER.PNG “An after image for setting a limit.”)
+<img src="SET_LIMITS_AFTER.jpg" width="200" alt="An after image for setting a limit."/>
 
 During our usability test, we found that many of our participants would attempt to click on the limits that were enclosed in boxes and circles when we asked them to set their drinking or spending limit instead of clicking the edit button. Our participants mentioned that the numbers appeared to be clickable due to being enclosed in a box or circle, and that they didn’t notice the edit button until after spending some time looking through the screen. To fix this, we removed all the boxes and circles around the numbers to prevent the participants from trying to click on them to set their limits, and made the edit button larger to grab their attention from the start. 
 
-![alt text](HOME_SCREEN_BEFORE.jpg “A before image of the home screen.”)
+<img src="HOME_SCREEN_BEFORE.jpg" width="200" alt="A before image of the home screen."/>
 
-![alt text](HOME_SCREEN_AFTER.jpg “An after image of the home screen.”)
+<img src="HOME_SCREEN_AFTER.jpg" width="200" alt="An after image of the home screen."/>
 
 Another issue we found during our testing was our home page. When the participants were asked to set their drinking limit, some would attempt to tap the bottom left box on the home screen. The bottom left box was designed to show participants the current state of how much they spent and drank, but does not do anything when clicked. The main screen was serving a confusing dual function as both a landing page and portal between possible tasks. To fix this, we made the home page into a welcome screen. It greets the user and informs them of their current drinking and spending state through dialogue instead of a button-like box. In addition, graphics of the same information provide a visual alternative that eases comparison against your limit. A persistent on-screen toolbar now handles task navigation, since we expect users to jump between limit-setting and performance review. A similar fix was deployed for the watch, which displayed a two-option menu screen that placed inebriated users an extra touch away from recording their drinks. This extraneous menu was eliminated at this stage.
 
+<img src="heuristic_eval_watch_menu.png" width="200" alt="a paper smart watch menu with navigation buttons"/>
 
-![alt text](heuristic_eval_watch_menu.png “a paper smart watch menu with navigation buttons”)
-
-![alt text](heuristic_eval_watch_no_menu.png “a paper smart watch menu with buttons to count drinks”)
+<img src="heuristic_eval_watch_no_menu.png" width="200" alt="a paper smart watch menu with buttons to count drinks"/>
 
 
 #### Information Organization and Representation
 Participants also had difficulty understanding the information shown during tracking on their smart watch and accessing the data tracked later on their mobile device. This is both due to that data sometimes being strictly not accessible or it being shown in a confusing manner. Changes were made both to the smart watch and the mobile application to address these issues.
 
+<img src="PAPER_BAR_GRAPH_PRE_DROPDOWN_CALENDAR.jpg" width="200" alt="A before image of the graph feature."/>
 
-insert(PAPER_BAR_GRAPH_PRE_DROPDOWN_CALENDAR)
-![alt text](PAPER_BAR_GRAPH_PRE_DROPDOWN_CALENDAR.jpg “A before image of the graph feature.”)
-
-insert(PAPER_BAR_GRAPH_POST_DROPDOWN_CALENDAR)
-![alt text](PAPER_BAR_GRAPH_POST_DROPDOWN_CALENDAR.jpg “An after image of the graph feature.”)
+<img src="PAPER_BAR_GRAPH_POST_DROPDOWN_CALENDAR.jpg" width="200" alt="An after image of the graph feature."/>
 
 A wearer had no way of examining their data from previous weeks. This was at odds with our vision of users exploring a series of previous nights-out to inform themselves during the limit choosing task. For example, if a user can recall feeling sick the day of their sister’s wedding, they might want to go quite far back in their history to review the count of drinks consumed that day. To address this, we added calendar functionality to the graph, allowing one to change the displayed month and year. We feel this access to a long-term counting history is critical in the formation of future goals and the avoidance of past mistakes.
 
-BEFORE: (insert HOME_SCREEN_BEFORE.png)
-AFTER: (insert HOME_SCREEN_AFTER.png)
+<img src="HOME_SCREEN_BEFORE.jpg" width="200" alt="A before image of the home screen."/>
+
+<img src="HOME_SCREEN_AFTER.jpg" width="200" alt="An after image of the home screen."/>
 
 During the usability testing and design review we found that people had a hard time figuring out where to find the track history button and confusing it with the current statistics button. We decided to separate these components and make the current statistics the main visual in the home page and moved the tracking button to a navigation bar. The home page greets people and lists current statistics (amount of drinks consumed and money spent) and the limits on drinks and spending they set for themselves. This visual representation is more effective because it shows people immediate information that is pertinent (current statistics compared to their set limits) and fixes the navigation problem within the home screen. 
 
+<img src="heuristic_eval_watch_no_menu.png" width="200" alt="Original drink selection without color."/>
 
-![alt text](heuristic_eval_watch_no_menu.png “Original drink selection without color.”)
-![alt text](colored_selection.png “Drink selection with color.”)
+<img src="colored_selection.png" width="200" alt="Drink selection with color."/>
+
 
 During our design review we found that the buttons for counting drinks on the watch were not intuitive. Since they were all one color with small icons, it was hard to find the difference between the buttons and did not provide an affordance to click. To combat this, we kept the icons but made the buttons different colors. Separating the buttons using color, in addition to the drink icons, would make it easier for people to differentiate the buttons, especially if they are intoxicated and cannot read the icons. 
 
@@ -101,36 +99,44 @@ During our design review we found that the buttons for counting drinks on the wa
 ### Final Paper Prototype
 
 #### Overview
-Our final paper prototype is our more refined prototype with revised interface and interactions.   
-![alt text](FULL_PAPER_PROTOTYPE_OVERVIEW.png “Final paper prototype overview.”)
+Our final paper prototype is our more refined prototype with revised interface and interactions.  
+
+<img src="FULL_PAPER_PROTOTYPE_OVERVIEW.png" width="700" alt="Final paper prototype overview."/>
+
 
 #### Task Execution 
 
 ##### Setting Spending and Drinking Limit
-![alt text](task_1_paper_2.png “Execution of task 1 on the final paper prototype.”)
+
+<img src="task_1_paper_2.png" width="700" alt="Execution of task 1 on the final paper prototype."/>
 
 ##### Counting Drinks and Tracking Spending While Out
-![alt text](task_2_paper_2.png “Execution of task 2 on the final paper prototype.”)
+
+<img src="task_2_paper_2.png" width="700" alt="Execution of task 2 on the final paper prototype."/>
 
 
 ### Digital Mockup
 
 #### Overview
-Our digital mockup is the final high fidelity mockup with our refined interface and interactions. 
-![alt text](FULL_DIGMOCKUP_OVERVIEW.png “Final paper prototype overview.”)
+Our digital mockup is the final high fidelity mockup with our refined interface and interactions.
+
+<img src="FULL_DIGMOCKUP_OVERVIEW.png" width="700" alt="Final paper prototype overview."/>
 
 #### Task Execution 
 
 ##### Setting Spending and Drinking Limit
-![alt text](task_1_digital.png “Execution of task 1 on the digital mockup.”)
+
+<img src="task_1_digital.png" width="700" alt="Execution of task 1 on the digital mockup."/>
 
 ##### Counting Drinks and Tracking Spending While Out
-![alt text](task_2_digital.png “Execution of task 2 on the digital mockup.”)
+
+<img src="task_2_digital.png" width="700" alt="Execution of task 2 on the digital mockup."/>
 
 #### Adjustments
 The main adjustment we made to the watch was adding a different color to each of the buttons to count drinks. By adding different colors, the buttons now afford clicking and helps people differentiate the buttons especially when they are intoxicated. In addition, the centralized theme of our watch and phone system is based on more pastel colors with the main color being a periwinkle blue to symbolize calmness. We used a dark theme in the smart watch app and a light theme in the phone app to separate the two modes, and is also symbolic for monitoring on the night out and reflecting the day after. 
 
-![alt text](final_paper_line_graph.png “a paper continuous line graph showing money spent each weekday”)
-![alt text](digital_mockup_money_graph.png “a digital bar graph showing money spent each weekday”)
+<img src="final_paper_line_graph.png" width="700" alt="a paper continuous line graph showing money spent each weekday"/>
+
+<img src="digital_mockup_money_graph.png" width="700" alt="a digital bar graph showing money spent each weekday"/>
 
 We removed the line graph on the money history menu in favor of a bar graph. We made this change because the previous style of graph implied a continuous increase in spending between nights out, which isn’t an accurate model of the wearer’s discrete purchases. Using the same graph style as in the alcohol tab also maintains internal consistency. Finally, the switch above the graph prominently signals the activated mode which reduces the need to visually distinguish the two graphs, particularly in a manner that obfuscates the core data.
