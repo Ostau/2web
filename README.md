@@ -79,7 +79,10 @@ Participants also had difficulty understanding the information shown during trac
 
 
 insert(PAPER_BAR_GRAPH_PRE_DROPDOWN_CALENDAR)
+![alt text](PAPER_BAR_GRAPH_PRE_DROPDOWN_CALENDAR.jpg “A before image of the graph feature.”)
+
 insert(PAPER_BAR_GRAPH_POST_DROPDOWN_CALENDAR)
+![alt text](PAPER_BAR_GRAPH_POST_DROPDOWN_CALENDAR.jpg “An after image of the graph feature.”)
 
 A wearer had no way of examining their data from previous weeks. This was at odds with our vision of users exploring a series of previous nights-out to inform themselves during the limit choosing task. For example, if a user can recall feeling sick the day of their sister’s wedding, they might want to go quite far back in their history to review the count of drinks consumed that day. To address this, we added calendar functionality to the graph, allowing one to change the displayed month and year. We feel this access to a long-term counting history is critical in the formation of future goals and the avoidance of past mistakes.
 
